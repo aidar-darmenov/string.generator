@@ -25,13 +25,8 @@ func server(_cfg *model.Configuration) *gin.Engine {
 
 	g := gin.Default()
 	g.POST("/healthcheck", _service.HealthCheck)
-	//g.POST("/payment", _service.Payment)
-	//g.PUT("/fine", _service.Fine)
-	//g.GET("/check", _service.Check)
-	//g.DELETE("/remove/:licenseid", _service.Remove)
-	//g.POST("/generate-data", _service.GenerateData)
-
 	g.POST("/encrypt-string-list", _service.EncryptStringList)
+	g.POST("/generate-string/:number", _service.GenerateString)
 
 	return g
 }

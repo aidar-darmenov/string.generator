@@ -12,3 +12,7 @@ type HashedStringElement struct {
 	Value [32]byte
 	Index int
 }
+
+type EncryptorResponseStruct struct {
+	HashedArray []string
+}

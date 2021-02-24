@@ -13,5 +13,6 @@
   "RedisHost": "localhost",
   "RedisDB": 1,
   "RedisPassword": "123456",
-  "WorkersNumber": 10
+  "WorkersNumber": 10,
+  "StringEncryptor": "http://localhost:8080/encrypt-string-list"
 }
